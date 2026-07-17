@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+   name="viewport"
+   content="width=device-width, initial-scale=1.0">
+  <title>nick rushton — portfolio</title>
+
+  <link
+   rel="stylesheet"
+   href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       HEADER NAV
+  ============================================ -->
+  <header
+   class="site-header">
+    <span
+     class="site-name"
+     onclick="showPage('page-about')">
+      nick rushton
+    </span>
+    <button
+     class="nav-toggle"
+     aria-label="Menu"
+     onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav
+     class="site-nav">
+      <a
+       class="active"
+       data-page="page-about"
+       onclick="showPage('page-about')">
+        about
+      </a>
+      <a
+       data-page="page-aetix"
+       onclick="showPage('page-aetix')">
+        aetix
+      </a>
+      <a
+       data-page="page-technology"
+       onclick="showPage('page-technology')">
+        technology
+      </a>
+      <a
+       data-page="page-installations"
+       onclick="showPage('page-installations')">
+        installations
+      </a>
+      <a
+       data-page="page-film-commercials"
+       onclick="showPage('page-film-commercials')">
+        film &amp; commercials
+      </a>
+      <a
+       data-page="page-misc"
+       onclick="showPage('page-misc')">
+        misc
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============================================
+       ABOUT (landing page)
+  ============================================ -->
+ <div
+   id="page-about"
+   class="page active">
+    <div
+     class="about-layout"
+     style="padding: 0 var(--page-padding-x) 20px;">
+      <div
+       class="about-text">
+        <div
+         class="about-body">
+         <p>I'm a sound artist and technologist, working in various mediums, focusing on sound design, technology and music composition.</p>
+         <p>I have an extensive background in music production, having grown up as a dance music producer and DJ in Cape Town. Since 2018, I've been working as a composer doing film, commercials and advertisement, and have since branched out into post-production, sound design and technology. My work relies on technology for creation, and often involves inventing and building custom tools and algorithms for art installations and bespoke jobs. As a producer, I make music under my project Aetix, which drifts between ambience and heavier club tracks. I have a lifelong fascination with digital tools and finding ways to harness them for meaningful work. </p>
+          <a href="mailto:nickrushtonmusic@gmail.com" class="footer-contact-btn">contact me</a>
+        </div>
+      </div>
+      <div
+       class="about-photo">
+        <iframe
+         src="assets/misc/3d-viewer.html"
+         style="width: 100%; height: 500px; border: none;">
+        </iframe>
+      </div>
+    </div>
+  </div> 
+
+  <!-- ============================================
+       AETIX — content page
+  ============================================ -->
+  <div
+   id="page-aetix"
+   class="page page-content">
+    <ul
+     class="content-list">
+      <li>
+        <div
+         class="content-img">
+          <img
+           src="assets/images/Llapses.jpeg"
+           alt="Llapses">
+        </div>
+        <div
+         class="content-embed">
+          <iframe
+           style="border: 0; width: 100%; height: 120px;"
+           src="https://bandcamp.com/EmbeddedPlayer/track=3775831968/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=none/transparent=true/"
+           seamless>
+            <a href="https://aetix.bandcamp.com/track/llapses">Llapses by aetix</a>
+          </iframe>
+        </div>
+        <p
+         class="content-text">
+          Big buildups and dread, a keen nod to lost memories of psytrance parties.
+        </p>
+        <p
+         class="content-credits">
+          Produced, Mixed &amp; Mastered: Nick Rushton<br>
+          Cover Art: Nick Rushton<br>
+          Released: September 2025
+        </p>
+      </li>
+      <li>
+        <div
+         class="content-img">
+          <img
+           src="assets/images/lost-demos.jpeg"
+           alt="lost demos">
+        </div>
+        <div
+         class="content-embed">
+          <iframe
+           style="border: 0; width: 100%; height: 307px;"
+           src="https://bandcamp.com/EmbeddedPlayer/album=1095195834/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/"
+           seamless>
+            <a href="https://aetix.bandcamp.com/album/lost-demos">lost demos by aetix</a>
+          </iframe>
+        </div>
+        <p
+         class="content-text">
+          A collection of tracks made between 2021 and 2024 that I never knew what to do with. I can no longer open the project files for most of them, so the released versions are what remain.
+        </p>
+        <p
+         class="content-credits">
+          Produced, Mixed &amp; Mastered: Nick Rushton<br>
+          Cover Art: Nick Rushton<br>
+          Released: May 2024
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ============================================
+       TECHNOLOGY — content page
+  ============================================ -->
+  <div
+   id="page-technology"
+   class="page">
+    <div
+     style="padding: 0 20px 20px; max-width: 780px; margin: 0 auto; text-align: center;">
+      <img
+       src="assets/images/gstrech2.png"
+       alt="GrooveStretch"
+       style="max-width: 420px; width: 100%; display: block; margin: 0 auto 24px;">
+      <p
+       class="about-greeting">
+        I build <em>tools and sounds</em> in Max/MSP.
+      </p>
+      <div
+       class="about-body">
+        <p>My desire for building technology exists as a direct feedback from the needs of my artistic practices, and the desire to transcend the limitations of my tools. I've built drum machines, audio effects, synthesisers, devices for custom art installations and worked with artists like <a href="https://ethermachines.com/" target="_blank" rel="noopener">Ben Frost</a> and Swak Catalog.</p>
+      </div>
+    </div>
+    <a href="https://sseker.gumroad.com/" target="_blank" rel="noopener" class="sseker-btn">
+      <img src="assets/images/sseker-logo.svg" alt="sseker" class="sseker-logo">
+      <span class="sseker-name">sseker</span>
+      <span class="sseker-subtitle">is my platform to release these tools</span>
+    </a>
+
+    <div
+     class="grid"
+     style="padding: 10px var(--page-padding-x) 60px;">
+      <div
+       class="grid-card"
+       onclick="showPage('page-visage')">
+        <div class="grid-card-img">
+          <img
+           src="assets/images/visage-move.gif"
+           alt="Visage">
+        </div>
+        <div class="grid-card-title">Visage</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-trig-a-midi')">
+        <div class="grid-card-img">
+          <img
+           src="assets/images/Trig-a-midi.gif"
+           alt="Trig-a-midi">
+        </div>
+        <div class="grid-card-title">Trig-a-midi</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-groovestretch')">
+        <div class="grid-card-img">
+          <img
+           src="assets/images/gstretch3.png"
+           alt="GrooveStretch">
+        </div>
+        <div class="grid-card-title">GrooveStretch</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-ben-frost')">
+        <div class="grid-card-img">
+          <img
+           src="assets/images/ben-frost-among-the-petals.webp"
+           alt="Ben Frost: Among The Petals">
+        </div>
+        <div class="grid-card-title">Ben Frost: Among The Petals</div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================
+       INSTALLATIONS — grid
+  ============================================ -->
+  <div
+   id="page-installations"
+   class="page page-grid">
+    <div
+     class="grid">
+      <div
+       class="grid-card"
+       onclick="showPage('page-ben-frost')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/ben-frost-among-the-petals.webp"
+           alt="Ben Frost: Among The Petals">
+        </div>
+        <div class="grid-card-title">Ben Frost: Among The Petals</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-fran-tteoap')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/pigeon-1.png"
+           alt="Through The Eyes of a Pigeon">
+        </div>
+        <div class="grid-card-title">Fran Hayes: Through The Eyes of a Pigeon</div>
+      </div>
+            <div
+       class="grid-card"
+       onclick="showPage('page-seth-overflow')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/seth-overflow-1.jpg"
+           alt="Overflow">
+        </div>
+        <div class="grid-card-title">Seth Kriger: Overflow</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================
+       FILM & COMMERCIALS — grid
+  ============================================ -->
+  <div
+   id="page-film-commercials"
+   class="page page-grid">
+    <div
+     class="grid">
+      <div
+       class="grid-card"
+       onclick="showPage('page-john-wick')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/john-wick-3-trailer.webp"
+           alt="John Wick 3: Trailer">
+        </div>
+        <div class="grid-card-title">John Wick 3: Trailer</div>
+        <div class="grid-card-tag">Composition</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-ally-bank')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/ally-bank-nascar.png"
+           alt="Ally Bank/NASCAR">
+        </div>
+        <div class="grid-card-title">Ally Bank/NASCAR</div>
+        <div class="grid-card-tag">Composition, Sound Design</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-9-lives')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/9-lives-jewellery.png"
+           alt="9 Lives Jewellery">
+        </div>
+        <div class="grid-card-title">9 Lives Jewellery</div>
+        <div class="grid-card-tag">Sound Design, Post-Production</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-adidas')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/adidas.png"
+           alt="adidas">
+        </div>
+        <div class="grid-card-title">adidas</div>
+        <div class="grid-card-tag">Post-Production</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-whistleblower')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/death-of-a-whistleblower.webp"
+           alt="Death of a Whistleblower">
+        </div>
+        <div class="grid-card-title">Death of a Whistleblower</div>
+        <div class="grid-card-tag">Composition</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-gemini-man')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/gemini-man.webp"
+           alt="Gemini Man: TV Spot">
+        </div>
+        <div class="grid-card-title">Gemini Man: TV Spot</div>
+        <div class="grid-card-tag">Sound Design</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-dylan-wrankmore')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/KnightRider.png"
+           alt="Biblo.tv and Dylan Wrankmore VFX">
+        </div>
+        <div class="grid-card-title">Biblo.tv and Dylan Wrankmore VFX</div>
+        <div class="grid-card-tag">Composition, Sound Design</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-think-sports-fitness')">
+        <div
+         class="grid-card-img">
+          <img
+           src="https://img.youtube.com/vi/CXT_VjRkMPA/maxresdefault.jpg"
+           alt="Think Sports Fitness - takealot.com">
+        </div>
+        <div class="grid-card-title">Think Sports Fitness - takealot.com</div>
+        <div class="grid-card-tag">Composition</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       MISC — grid
+  ============================================ -->
+  <div
+   id="page-misc"
+   class="page page-grid">
+    <div
+     class="grid">
+      <div
+       class="grid-card"
+       onclick="showPage('page-teaching')">
+        <div class="grid-card-img">
+          <img
+           src="assets/images/teaching.png"
+           alt="Teaching">
+        </div>
+        <div class="grid-card-title">Teaching Music Production</div>
+      </div>
+      <div
+       class="grid-card"
+       onclick="showPage('page-cocoon')">
+        <div
+         class="grid-card-img">
+          <img
+           src="assets/images/cocoon-panel.png"
+           alt="Cocoon Sound">
+        </div>
+        <div class="grid-card-title">Cocoon Sound</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       CONTENT PAGES (individual projects)
+  ============================================ -->
+
+  <div
+   id="page-demo-reel"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/mF2DaHwQM_s?si=FVNesegYs6KfeB4i"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Sound Design Demo Reel
+        </h2>
+        <span class="content-tag">Sound Design</span>
+      </div>
+      <p
+       class="content-text">
+        Centred around futuristic, electronic sound design. I used mainly a combination of modular synthesizers and my own Max/MSP patches.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-9-lives"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         width="600"
+         height="338"
+         src="https://www.youtube.com/embed/XdzZnEwjqoU?si=-oEWNeXW5emddbgR"
+         frameborder="0"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          <a href="https://ninelivesjewellery.com/" target="_blank" rel="noopener">9 Lives Jewellery</a>
+        </h2>
+        <span
+         class="content-tag">
+          Final Mix, Sound Design
+        </span>
+      </div>
+      <p
+       class="content-text">
+        All sound by me!
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-adidas"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <video controls
+        width="100%"
+        height="auto"
+         source src="assets/video/adidas-mdaniels.mp4">
+        </video>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          adidas
+        </h2>
+        <span
+         class="content-tag">
+          Final Mix, Sound Design
+        </span>
+      </div>
+      <p
+       class="content-text">
+        Assisted <a href="https://vimeo.com/welcomeparkstudio" target="_blank" rel="noopener">Luis Trujillo of Welcome Park Studio</a> for a commercial for post-production final mix.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-john-wick"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/pU8-7BX9uxs?si=XAT83HYVTzTLCqxJ"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          John Wick 3: Parabellum - Trailer #2
+        </h2>
+        <span class="content-tag">Composition</span>
+      </div>
+      <p
+       class="content-text">
+        Placement with <a href="https://jdmmusic.net/" target="_blank" rel="noopener">JDM Music</a> for John Wick Chapter 3 Trailer #2 with collaborator <a href="https://www.julianleesounds.com/about" target="_blank" rel="noopener">Julian Lee</a>. <a href="https://idmmag.com/news/john-wick-3-trailer-features-sa-producers-track-watch/" target="_blank" rel="noopener">Link to article</a>.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-ally-bank"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/Vnss0bncPtY?si=rmtyz7VJWsHMpiZf"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+            <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Ally Bank / NASCAR
+        </h2>
+        <span
+         class="content-tag">
+          Composition, Sound Design
+        </span>
+      </div>
+      <p
+       class="content-text">
+        Commissioned piece with <a href="https://www.honeymoonstudios.co.za/" target="_blank" rel="noopener">Honeymoon Studios</a>. Includes some of my own sound design.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-whistleblower"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9lGl-KbOzA?si=-PDTGaTJgWWdZ9Ux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Death of a Whistleblower
+        </h2>
+        <span class="content-tag">Composition</span>
+      </div>
+
+      <p
+       class="content-text">
+        I worked on the film by South African director Ian Gabriel as an assistant composer to <a href="https://www.markuswormstorm.tv/" target="_blank" rel="noopener">Markus Wormstorm</a>, including writing full scores for scenes in the film, as well as the trailer music and SFX.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-gemini-man"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/b-Fgp69f-g8"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Gemini Man: TV Spot
+        </h2>
+        <span class="content-tag">Sound Design</span>
+      </div>
+      <p
+       class="content-text">
+        Sound design with elements licensed to <a href="https://jdmmusic.net/" target="_blank" rel="noopener">JDM Music</a> used in Gemini Man with collaborator <a href="https://www.julianleesounds.com/about" target="_blank" rel="noopener">Julian Lee</a>.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-dylan-wrankmore"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/zqAhvn756yU?si=67EXdqDfPv2AIfSJ"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Biblo.tv and Dylan Wrankmore VFX
+        </h2>
+        <span
+         class="content-tag">
+          Composition, Sound Design
+        </span>
+      </div>
+      <p
+       class="content-text">
+        Composition and some sound design for Dylan Wrankmore and <a href="https://biblo.tv/" target="_blank" rel="noopener">Biblo.tv</a>/<a href="https://www.markuswormstorm.tv/" target="_blank" rel="noopener">Markus Wormstorm</a> titled 'The Last Honest Machine', which is a showreel video for VFX artist Dylan Wrankmore centred around a recreation of the 80's show Knight Rider.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-think-sports-fitness"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-film-commercials')">
+      ← back to film &amp; commercials
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/CXT_VjRkMPA"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Think Sports Fitness - takealot.com
+        </h2>
+        <span class="content-tag">Composition</span>
+      </div>
+      <p
+       class="content-text">
+        Composition licensed through <a href="https://www.honeymoonstudios.co.za/" target="_blank" rel="noopener">Honeymoon Studios</a> for takealot.com fitness campaign.
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-ben-frost"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-installations')">
+      ← back to installations
+    </span>
+    <div
+     class="content-body">
+        <div
+       class="content-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aSC4X-MxCw8?si=Lwzatgi-GtSdwAbl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Ben Frost: Among The Petals
+        </h2>
+      </div>
+      <p
+       class="content-text">
+        <a href="https://ethermachines.com/" target="_blank" rel="noopener">Ben</a> approached me with a task to build him a panner for an exhibition that would allow him
+        to interface with custom speaker configurations. Lots of these kinds of panners exist, but the
+        question was: how can we make the panner behave circularly even if the speakers are set
+        up in a straight line? So we made a panner that allows you to map a custom speaker
+        configuration, with a round robin ‘position’ dial. There is also a ‘sequencer mode’ which
+        allows you to sequence the panner in step format, synced to Live’s clock system.
+      </p>
+      <div class="image-pair">
+        <img
+         src="assets/images/petals-2.png"
+         alt="Helix Panner">
+        <img
+         src="assets/images/ben-frost-petals-installation.webp"
+         alt="Among The Petals Installation">
+      </div>
+      <div class="img">
+            <img
+         src="assets/images/ben-frost-helix-panner.webp"
+         alt="Helix Panner">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+   id="page-teaching"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-misc')">
+      ← back to misc
+    </span>
+    <div
+     class="content-body">
+        <div
+       class="content-embed">
+        <iframe
+         src="https://www.youtube.com/embed/jnLs3WvPIZA?si=pA6Ov-DXz2Tiwcnc"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Teaching Ableton
+        </h2>
+      </div>
+      <p
+       class="content-text">
+        Over the years I have taught 3 students one-on-one lessons on how to create music and sounds in digital audio workstations like Ableton Live and Cubase, with a focus on building sounds from scratch in software synthesizers, as well as creative uses of effects and arrangement. I have also done a beginners class for Cocoon Sound on how to use Ableton for the first time!
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-cocoon"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-misc')">
+      ← back to misc
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-embed">
+        <iframe
+         style="border: 0; width: 100%; height: 300px;"
+         scrolling="no"
+         allow="autoplay; encrypted-media"
+         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2081871825&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true">
+          <a href="https://soundcloud.com/cocoon-sound/sets/cocoon-radio-01-04-05-2025">Cocoon Radio 01 (04/05/2025) by Cocoon Sound</a>
+        </iframe>
+      </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Cocoon Sound
+        </h2>
+      </div>
+      <p
+       class="content-text">
+        Myself and Lena Ernsting run a community project called Cocoon, which is loosely described as a skill-sharing and bridging platform for music and sound. We do workshops, host a radio show, have organised panel talks (such as The Sound As An Ecosystem), host listening parties, and teach people how to make music, with an emphasis on inclusivity for marginalised groups.
+      </p>
+      <div class="image-pair">
+        <img
+         src="assets/images/cocoon-panel.png"
+         alt="Cocoon panel talk">
+        <img
+         src="assets/images/cocoon-sound.png"
+         alt="Cocoon Sound"
+         style="object-position: left;">
+      </div>
+      <div
+       class="content-embed"
+       style="padding-bottom: 0;">
+        <div class="audio-wrapper" style="padding-bottom: 4px;">
+          <audio controls>
+            <source src="assets/audio/cocoon-radio-mnemonic.wav" type="audio/wav">
+          </audio>
+        </div>
+      </div>
+      <p
+       class="content-text"
+       style="margin-top: 8px; text-align: center;">
+        Sound mnemonic I made for Cocoon's radio show.
+      </p>
+      <div style="text-align: center;">
+        <a
+         href="https://www.instagram.com/cocoon_sound/"
+         target="_blank"
+         rel="noopener"
+         class="footer-contact-btn">
+          cocoon instagram
+        </a>
+      </div>
+    </div>
+  </div>
+<div
+   id="page-fran-tteoap"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-installations')">
+      ← back to installations
+    </span>
+    <div
+     class="content-body">
+     <div
+         class="img">
+          <img
+           src="assets/images/pigeon-2.gif"
+           alt="Through The Eyes of a Pigeon"
+           style="object-fit: cover;">
+        </div>
+      <div
+       class="content-embed">
+        <div class="audio-wrapper">
+          <audio controls>
+            <source src="assets/audio/fran-bathe-wounds.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Fran Hayes: Through The Eyes of a Pigeon
+        </h2>
+      </div>
+      <p
+       class="content-text">
+          I made sound design for <a href="https://www.franhayes.com/" target="_blank" rel="noopener">Fran’s</a> exhibition titled Through The Eyes of a Pigeon in April 2023 at 22fifty gallery in Cape Town. The piece was an immersive audio-visual projection. Fran approached me with a simple brief: oozy, squelchy, insides-turning out, imagined spaces.</p>
+      <div
+       class="img"
+       style="margin-top: 30px;">
+        <img
+         src="assets/images/pigeon-1.png"
+         alt="Through The Eyes of a Pigeon"
+         style="object-fit: cover;">
+      </div>
+    </div>
+  </div>
+
+  <div
+   id="page-seth-overflow"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-installations')">
+      ← back to installations
+    </span>
+    <div
+     class="content-body">
+     <div
+         class="img">
+          <img
+           src="assets/images/seth-overflow-1.jpg"
+           alt="Overflow"
+           style="object-fit: cover;">
+        </div>
+        <div
+       class="content-embed">
+        <div class="audio-wrapper">
+          <audio controls>
+            <source src="assets/audio/seth-uni-clip.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Overflow: Seth Kriger
+        </h2>
+      </div>
+      <p
+       class="content-text">
+        I createed the sound design and installed a speaker installation for <a href="https://www.linkedin.com/in/seth-kriger-59008323b?originalSubdomain=za" target="_blank" rel="noopener">Seth Kriger's</a> exhbition titled 'Overflow' in late 2022.<br>
+        <br>
+        Cultural worker and curator Seth Kriger offers
+        a discursive analysis centred around his research
+        on the tidal pools along the False Bay coastline in
+        Cape Town. Kriger aims to reframe our understanding
+        of what an archive can ’validly’ contain as he explores
+        the ocean as a depository of memory which can be engaged
+        with what he defines as an eco archive. 
+        Overflow: Towards and with an eco-archive does not stop
+        short at redefining the functions of an ocean outside
+        of its biological or geographical significance, 
+        but also begins to trace the socio-historical permeations
+        that can be excavated from the mapping and spatial 
+        analysis of the tidal pools which speaks to the socio-geographical
+        reality of apartheid constructions. What can be seen, felt, 
+        and heard in these alternative forms of archives that remains 
+        invisible in others?<br>
+        <br>
+        “Beyond then viewing these tidal walls as physical and social boundaries, I view them as metaphors for the constraints imposed against the black aquatic. Through this analysis these photographs aim to engage with the racialized constructions and urban architecture of the ocean and how non-white bodies have and continue to move beyond these boundaries to access the ocean as a site of liberated joy, ecological harmony, and radical imagination.”
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-visage"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-technology')">
+      ← back to technology
+    </span>
+    <div
+     class="content-body">
+     <div
+         class="content-img">
+          <img
+           src="assets/images/visage-move.gif"
+           alt="Visage drum synth"
+           style="max-width: 500px;">
+        </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Visage
+        </h2>
+      </div>
+      <p
+       class="content-text">
+       A four track FM drum synthesizer built for Ableton Live.</p>
+<br>
+<p>
+I made this for myself a while ago to make digital sounding drum loops where I could have control of timbre etc. 
+Just wanted something simple — essentially a cold, metallic sounding drum machine that can be broken apart in Ableton, 
+with some cheap DSP effects that you can modulate with Live LFO’s.
+</p>
+
+<em>Features:</em>
+<ul>
+  <li>
+    Separate outs so you can process each track individually. Take a blank audio track in Ableton and set the input 
+    to Visage, and find all the separate outputs labelled channels 1–5 (kick is channel 1; FX is 5; etc.).
+  </li>
+  <li>Trigger each track with MIDI C1–D#1.</li>
+  <li>
+    A mode that lets you start/stop the sequencer for individual tracks — for arrangement. Turn this on in the settings 
+    and start/stop tracks by holding C0–D#0 respectively. MIDI note on + hold = play sequencer; MIDI note off = stop sequencer.
+  </li>
+</ul>
+<br>
+<p>
+Thanks to Tom Hall for letting me use his tmh.verb patch for the reverb. I made some modifications, but the architecture 
+is all his: <a href="https://www.tomhall.xyz/" target="_blank">tomhall.xyz</a>
+</p>
+<br>
+<p>
+It’s a bit buggy, and there’s things I’ll try my best to fix and improve on, but I don’t have much time that I can dedicate to it. 
+I decided to implement a “pay if you can” model — if you can afford it, your support will go a long way in further development, 
+bug fixing, and allowing me to continue making patches.
+</p>
+<br>
+<div
+class="content-embed">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N5ln1tNqFSE?si=cX5dYupudWFkRJJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-trig-a-midi"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-technology')">
+      ← back to technology
+    </span>
+    <div
+     class="content-body">
+     <div
+         class="content-img">
+          <img
+           src="assets/images/Trig-a-midi.gif"
+           alt="Trig-a-midi"
+           style="object-fit: cover; max-width: 500px;">
+        </div>
+       <div
+       class="content-header">
+        <h2
+         class="section-title">
+          Trig-a-midi
+        </h2>
+      </div>
+      <p
+       class="content-text">
+        <p class="content-text">
+Trig_A-MIDI allows you to take any incoming audio signal and uses it to trigger a MIDI note elsewhere in Ableton Live.
+</p>
+<br>
+
+<p>
+For example, this allows a microphone input to trigger a drum sound, or for a synthesiser to trigger a voice sample.
+</p>
+
+<br>
+
+<p>
+The device identifies triggers whenever an input signal crosses over the set ‘Threshold’ value in combination with the set ‘Return’ value.
+</p>
+
+<p>
+‘Count’ allows you to control the rate at which MIDI is triggered. For example, if you set the count to a value of 4, the device will only trigger a MIDI note once 4 transients have been detected.
+</p>
+<br>
+      </p>
+    </div>
+  </div>
+
+  <div
+   id="page-groovestretch"
+   class="page page-content">
+    <span
+     class="back-link"
+     onclick="showPage('page-technology')">
+      ← back to technology
+    </span>
+    <div
+     class="content-body">
+      <div
+       class="content-img">
+        <img
+         src="assets/images/gstretch3.png"
+         alt="GrooveStretch"
+         style="max-width: 500px;">
+      </div>
+      <div
+       class="content-header">
+        <h2
+         class="section-title">
+          GrooveStretch
+        </h2>
+      </div>
+      <p class="content-text">
+        GrooveStretch is a Max/MSP patch that transforms your sample folder into a playground of texture and experimentation.
+      </p>
+      <br>
+      <p class="content-text">
+        By scanning through a directory of audio files and applying aggressive time-stretching, GrooveStretch recontextualizes source material into something entirely new. This results in digital artifacts and unexpected rhythms, useful for adding textures to your track, or even starting a rhythmic idea or using as raw material to inspire a new idea.
+      </p>
+      <br>
+      <p class="content-text">
+        GrooveStretch works best as a sound source for raw material, pushed through effects. An Ableton Live rack is included to help bring the material to life — it includes multiband compression, grain delay, filtering, and more.
+      </p>
+      <br>
+      <p class="content-text">
+        Simply drag in a folder of samples or an individual sample, and mess with the parameters and sliders. There are randomise functions, and each slider graph has its own internal clock, so listen as things get out of control and ideas spring to you.
+      </p>
+      <br>
+      <p class="content-text">
+        GrooveStretch was made in Max 8.6.2, but you do not need to own a license of Max to use this.
+      </p>
+      <br>
+      <div class="content-embed">
+        <iframe
+         width="560"
+         height="315"
+         src="https://www.youtube.com/embed/zPbqqwlZ22I?si=AKnvsfxQ8K-xX2oC"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="site-footer">
+    <a href="mailto:nickrushtonmusic@gmail.com" class="footer-email">nickrushtonmusic@gmail.com</a>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/aetix.00000/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="assets/images/instagram.svg" alt="Instagram" class="footer-icon">
+      </a>
+      <a href="https://soundcloud.com/aetixxxxx" target="_blank" rel="noopener" aria-label="SoundCloud">
+        <img src="assets/images/soundcloud.svg" alt="SoundCloud" class="footer-icon">
+      </a>
+      <a href="https://aetix.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp">
+        <img src="assets/images/bandcamp.svg" alt="Bandcamp" class="footer-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/nick-rushton-4898a1201/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="assets/images/linkedin.svg" alt="LinkedIn" class="footer-icon" style="width: 15px; height: 15px;">
+      </a>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       JAVASCRIPT
+  ============================================ -->
+  <script>
+    function initYTFacades() {
+      document.querySelectorAll('iframe[src*="youtube.com/embed"]').forEach(function(iframe) {
+        var src = iframe.getAttribute('src');
+        var match = src.match(/embed\/([^?&]+)/);
+        if (!match) return;
+        var videoId = match[1];
+        var attrs = {};
+        Array.from(iframe.attributes).forEach(function(a) { attrs[a.name] = a.value; });
+
+        var facade = document.createElement('div');
+        facade.className = 'yt-facade';
+
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
+        img.alt = '';
+        img.onerror = function() {
+          this.src = 'https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg';
+        };
+
+        var play = document.createElement('div');
+        play.className = 'yt-play';
+
+        facade.appendChild(img);
+        facade.appendChild(play);
+
+        facade.addEventListener('click', function() {
+          var newIframe = document.createElement('iframe');
+          Object.entries(attrs).forEach(function([k, v]) { newIframe.setAttribute(k, v); });
+          var sep = src.includes('?') ? '&' : '?';
+          newIframe.setAttribute('src', src + sep + 'autoplay=1');
+          facade.parentNode.replaceChild(newIframe, facade);
+        });
+
+        iframe.parentNode.replaceChild(facade, iframe);
+      });
+    }
+
+    // Stop any playing media within a page that's being left.
+    function stopMedia(container) {
+      if (!container) return;
+      container.querySelectorAll('audio, video').forEach(function(m) {
+        try { m.pause(); m.currentTime = 0; } catch (e) {}
+      });
+      // Reloading each iframe (soundcloud, bandcamp, youtube) halts its playback.
+      container.querySelectorAll('iframe').forEach(function(f) {
+        var src = f.getAttribute('src');
+        if (!src) return;
+        f.setAttribute('src', src.replace(/([?&])autoplay=1(\b)/, '$1autoplay=0$2'));
+      });
+    }
+
+    var DEFAULT_PAGE = 'page-about';
+
+    function renderPage(pageId) {
+      var current = document.querySelector('.page.active');
+      if (current && current.id !== pageId) stopMedia(current);
+
+      document.querySelectorAll('.page').forEach(function(p) {
+        p.classList.remove('active');
+      });
+      var target = document.getElementById(pageId);
+      if (target) {
+        target.classList.add('active');
+        window.scrollTo(0, 0);
+      }
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        a.classList.remove('active');
+        if (a.getAttribute('data-page') === pageId) {
+          a.classList.add('active');
+        }
+      });
+      var nav = document.querySelector('.site-nav');
+      var toggle = document.querySelector('.nav-toggle');
+      if (nav) nav.classList.remove('open');
+      if (toggle) toggle.classList.remove('open');
+    }
+
+    // Navigating pushes a browser history entry so back/forward work.
+    function showPage(pageId) {
+      if (history.state && history.state.page === pageId) return;
+      history.pushState({ page: pageId }, '', '#' + pageId);
+      renderPage(pageId);
+    }
+
+    window.addEventListener('popstate', function(e) {
+      var pageId = (e.state && e.state.page) ||
+        (location.hash ? location.hash.slice(1) : DEFAULT_PAGE);
+      if (!document.getElementById(pageId)) pageId = DEFAULT_PAGE;
+      renderPage(pageId);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      initYTFacades();
+      var initial = location.hash ? location.hash.slice(1) : DEFAULT_PAGE;
+      if (!document.getElementById(initial)) initial = DEFAULT_PAGE;
+      history.replaceState({ page: initial }, '', '#' + initial);
+      renderPage(initial);
+    });
+
+    function toggleNav() {
+      var nav = document.querySelector('.site-nav');
+      var toggle = document.querySelector('.nav-toggle');
+      if (nav) nav.classList.toggle('open');
+      if (toggle) toggle.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
