@@ -84,6 +84,7 @@
     import * as THREE from 'three';
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
     const scene = new THREE.Scene();
 
@@ -129,12 +130,12 @@
     controls.minPolarAngle = Math.PI * 0.3;
     controls.maxPolarAngle = Math.PI * 0.7;
 
-    // Load model
-    const MODEL_PATH = './3dscan01-ver01.glb';
+    // Load model (meshopt-compressed GLB — see 3dscan01-ver01.opt.glb)
+    const MODEL_PATH = './3dscan01-ver01.opt.glb';
     const progressFill = document.getElementById('progress-fill');
     const loaderEl = document.getElementById('loader');
 
-    new GLTFLoader().load(
+    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).load(
       MODEL_PATH,
       (gltf) => {
         const model = gltf.scene;
