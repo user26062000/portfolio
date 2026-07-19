@@ -7,12 +7,29 @@
    content="width=device-width, initial-scale=1.0">
   <title>Nick Rushton</title>
 
+  <!-- Load the fonts right away instead of waiting for styles.css to parse. -->
+  <link
+   rel="preload"
+   href="assets/fonts/UniversNextProRegular.woff2"
+   as="font"
+   type="font/woff2"
+   crossorigin>
+  <link
+   rel="preload"
+   href="assets/fonts/GaramondATFSubhead-Italic.woff2"
+   as="font"
+   type="font/woff2"
+   crossorigin>
+
   <link
    rel="stylesheet"
    href="styles.css">
 </head>
 
 <body>
+
+  <!-- Covers the page until the fonts are ready. -->
+  <div id="loading">loading</div>
 
   <!-- ============================================
        HEADER NAV
@@ -109,6 +126,7 @@
         <div
          class="content-img">
           <img
+           loading="lazy"
            src="assets/images/Llapses.jpeg"
            alt="Llapses">
         </div>
@@ -136,6 +154,7 @@
         <div
          class="content-img">
           <img
+           loading="lazy"
            src="assets/images/lost-demos.jpeg"
            alt="lost demos">
         </div>
@@ -171,6 +190,7 @@
     <div
      style="padding: 0 20px 20px; max-width: 780px; margin: 0 auto; text-align: center;">
       <img
+       loading="lazy"
        src="assets/images/gstrech2.png"
        alt="GrooveStretch"
        style="max-width: 420px; width: 100%; display: block; margin: 0 auto 24px;">
@@ -184,7 +204,7 @@
       </div>
     </div>
     <a href="https://sseker.gumroad.com/" target="_blank" rel="noopener" class="sseker-btn">
-      <img src="assets/images/sseker-logo.svg" alt="sseker" class="sseker-logo">
+      <img loading="lazy" src="assets/images/sseker-logo.svg" alt="sseker" class="sseker-logo">
       <span class="sseker-name">sseker</span>
       <span class="sseker-subtitle">is my platform to release these tools</span>
     </a>
@@ -197,6 +217,7 @@
        onclick="showPage('page-visage')">
         <div class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/visage-move.gif"
            alt="Visage">
         </div>
@@ -207,6 +228,7 @@
        onclick="showPage('page-trig-a-midi')">
         <div class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/Trig-a-midi.gif"
            alt="Trig-a-midi">
         </div>
@@ -217,6 +239,7 @@
        onclick="showPage('page-groovestretch')">
         <div class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/gstretch3.png"
            alt="GrooveStretch">
         </div>
@@ -227,6 +250,7 @@
        onclick="showPage('page-ben-frost')">
         <div class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/ben-frost-among-the-petals.webp"
            alt="Ben Frost: Among The Petals">
         </div>
@@ -248,6 +272,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/ben-frost-among-the-petals.webp"
            alt="Ben Frost: Among The Petals">
         </div>
@@ -259,6 +284,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/pigeon-1.png"
            alt="Through The Eyes of a Pigeon">
         </div>
@@ -270,6 +296,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/seth-overflow-1.jpg"
            alt="Overflow">
         </div>
@@ -293,6 +320,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/john-wick-3-trailer.webp"
            alt="John Wick 3: Trailer">
         </div>
@@ -305,6 +333,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/ally-bank-nascar.png"
            alt="Ally Bank/NASCAR">
         </div>
@@ -317,6 +346,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/9-lives-jewellery.png"
            alt="9 Lives Jewellery">
         </div>
@@ -329,6 +359,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/adidas.png"
            alt="adidas">
         </div>
@@ -341,6 +372,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/death-of-a-whistleblower.webp"
            alt="Death of a Whistleblower">
         </div>
@@ -353,6 +385,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/gemini-man.webp"
            alt="Gemini Man: TV Spot">
         </div>
@@ -365,6 +398,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/KnightRider.png"
            alt="Biblo.tv and Dylan Wrankmore VFX">
         </div>
@@ -377,6 +411,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="https://img.youtube.com/vi/CXT_VjRkMPA/maxresdefault.jpg"
            alt="Think Sports Fitness - takealot.com">
         </div>
@@ -399,6 +434,7 @@
        onclick="showPage('page-teaching')">
         <div class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/teaching.png"
            alt="Teaching">
         </div>
@@ -410,6 +446,7 @@
         <div
          class="grid-card-img">
           <img
+           loading="lazy"
            src="assets/images/cocoon-panel.png"
            alt="Cocoon Sound">
         </div>
@@ -780,14 +817,17 @@
       </p>
       <div class="image-pair">
         <img
+         loading="lazy"
          src="assets/images/petals-2.png"
          alt="Helix Panner">
         <img
+         loading="lazy"
          src="assets/images/ben-frost-petals-installation.webp"
          alt="Among The Petals Installation">
       </div>
       <div class="img">
             <img
+         loading="lazy"
          src="assets/images/ben-frost-helix-panner.webp"
          alt="Helix Panner">
       </div>
@@ -863,9 +903,11 @@
       </p>
       <div class="image-pair">
         <img
+         loading="lazy"
          src="assets/images/cocoon-panel.png"
          alt="Cocoon panel talk">
         <img
+         loading="lazy"
          src="assets/images/cocoon-sound.png"
          alt="Cocoon Sound"
          style="object-position: left;">
@@ -908,6 +950,7 @@
      <div
          class="img">
           <img
+           loading="lazy"
            src="assets/images/pigeon-2.gif"
            alt="Through The Eyes of a Pigeon"
            style="object-fit: cover;">
@@ -934,6 +977,7 @@
        class="img"
        style="margin-top: 30px;">
         <img
+         loading="lazy"
          src="assets/images/pigeon-1.png"
          alt="Through The Eyes of a Pigeon"
          style="object-fit: cover;">
@@ -954,6 +998,7 @@
      <div
          class="img">
           <img
+           loading="lazy"
            src="assets/images/seth-overflow-1.jpg"
            alt="Overflow"
            style="object-fit: cover;">
@@ -1012,6 +1057,7 @@
      <div
          class="content-img">
           <img
+           loading="lazy"
            src="assets/images/visage-move.gif"
            alt="Visage drum synth"
            style="max-width: 500px;">
@@ -1079,6 +1125,7 @@ class="content-embed">
      <div
          class="content-img">
           <img
+           loading="lazy"
            src="assets/images/Trig-a-midi.gif"
            alt="Trig-a-midi"
            style="object-fit: cover; max-width: 500px;">
@@ -1128,6 +1175,7 @@ The device identifies triggers whenever an input signal crosses over the set ‘
       <div
        class="content-img">
         <img
+         loading="lazy"
          src="assets/images/gstretch3.png"
          alt="GrooveStretch"
          style="max-width: 500px;">
@@ -1181,16 +1229,16 @@ The device identifies triggers whenever an input signal crosses over the set ‘
     <a href="mailto:nickrushtonmusic@gmail.com" class="footer-email">nickrushtonmusic@gmail.com</a>
     <div class="footer-socials">
       <a href="https://www.instagram.com/aetix.00000/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="assets/images/instagram.svg" alt="Instagram" class="footer-icon">
+        <img loading="lazy" src="assets/images/instagram.svg" alt="Instagram" class="footer-icon">
       </a>
       <a href="https://soundcloud.com/aetixxxxx" target="_blank" rel="noopener" aria-label="SoundCloud">
-        <img src="assets/images/soundcloud.svg" alt="SoundCloud" class="footer-icon">
+        <img loading="lazy" src="assets/images/soundcloud.svg" alt="SoundCloud" class="footer-icon">
       </a>
       <a href="https://aetix.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp">
-        <img src="assets/images/bandcamp.svg" alt="Bandcamp" class="footer-icon">
+        <img loading="lazy" src="assets/images/bandcamp.svg" alt="Bandcamp" class="footer-icon">
       </a>
       <a href="https://www.linkedin.com/in/nick-rushton-4898a1201/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="assets/images/linkedin.svg" alt="LinkedIn" class="footer-icon" style="width: 15px; height: 15px;">
+        <img loading="lazy" src="assets/images/linkedin.svg" alt="LinkedIn" class="footer-icon" style="width: 15px; height: 15px;">
       </a>
     </div>
   </footer>
@@ -1212,6 +1260,7 @@ The device identifies triggers whenever an input signal crosses over the set ‘
         facade.className = 'yt-facade';
 
         var img = document.createElement('img');
+        img.loading = 'lazy';
         img.src = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
         img.alt = '';
         img.onerror = function() {
@@ -1304,6 +1353,13 @@ The device identifies triggers whenever an input signal crosses over the set ‘
       if (nav) nav.classList.toggle('open');
       if (toggle) toggle.classList.toggle('open');
     }
+
+    // Hide the loading screen once the fonts are ready.
+    function hideLoading() {
+      document.getElementById('loading').classList.add('done');
+    }
+    document.fonts.ready.then(hideLoading);
+    setTimeout(hideLoading, 8000);
   </script>
 
 </body>

@@ -1,15 +1,37 @@
 @font-face {
   font-family: 'GaramondATF';
-  src: url('assets/fonts/GaramondATFSubhead-Italic.otf') format('opentype');
+  src: url('assets/fonts/GaramondATFSubhead-Italic.woff2') format('woff2'),
+       url('assets/fonts/GaramondATFSubhead-Italic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'UniversNext';
-  src: url('assets/fonts/UniversNextProRegular.ttf') format('truetype');
+  src: url('assets/fonts/UniversNextProRegular.woff2') format('woff2'),
+       url('assets/fonts/UniversNextProRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #777;
+  z-index: 9999;
+}
+#loading.done { display: none; }
 
 :root {
   --bg-color: #D9D9D9;
