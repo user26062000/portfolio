@@ -6,6 +6,25 @@
    name="viewport"
    content="width=device-width, initial-scale=1.0">
   <title>Nick Rushton</title>
+  <meta
+   name="description"
+   content="Nick Rushton is a sound artist and technologist working across sound design, music composition and creative technology.">
+
+  <!-- Open Graph tags — these build the link preview card on WhatsApp,
+       iMessage, Slack, etc. The image URL must be absolute. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aetixnick.com/">
+  <meta property="og:title" content="Nick Rushton | Sound Artist & Technologist">
+  <meta property="og:description" content="Nick Rushton is a sound artist and technologist working across sound design, music composition and creative technology.">
+  <meta property="og:site_name" content="Nick Rushton">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nick Rushton | Sound Artist & Technologist">
+  <meta name="twitter:description" content="Nick Rushton is a sound artist and technologist working across sound design, music composition and creative technology.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
   <!-- Load the fonts right away instead of waiting for styles.css to parse. -->
   <link
@@ -1307,9 +1326,34 @@ The device identifies triggers whenever an input signal crosses over the set ‘
 
     var DEFAULT_PAGE = 'page-about';
 
+    // Tab title per section. About is the landing page, so it stays plain.
+    var PAGE_TITLES = {
+      'page-about': 'Nick Rushton',
+      'page-aetix': 'Nick Rushton | Aetix',
+      'page-technology': 'Nick Rushton | Technology',
+      'page-installations': 'Nick Rushton | Installations',
+      'page-film-commercials': 'Nick Rushton | Film & Commercials',
+      'page-misc': 'Nick Rushton | Misc'
+    };
+
+    function updateTitle(pageId) {
+      if (PAGE_TITLES[pageId]) {
+        document.title = PAGE_TITLES[pageId];
+        return;
+      }
+      // Individual project pages: use the project's heading.
+      var target = document.getElementById(pageId);
+      var heading = target && target.querySelector('.section-title');
+      document.title = heading
+        ? 'Nick Rushton | ' + heading.textContent.trim()
+        : 'Nick Rushton';
+    }
+
     function renderPage(pageId) {
       var current = document.querySelector('.page.active');
       if (current && current.id !== pageId) stopMedia(current);
+
+      updateTitle(pageId);
 
       document.querySelectorAll('.page').forEach(function(p) {
         p.classList.remove('active');
